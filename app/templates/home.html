@@ -1,8 +1,0 @@
-{% extends "base.html" %}{% block content %}
-{% if not user %}<div class="hero"><h1>🚒 İtfaiye araçları için yapay zekâ kılavuzu</h1><p>Kılavuzlarda arayın, uzun PDF'leri tek tek okumayın.</p><a class="button" href="/login">Giriş Yap</a></div>
-{% else %}<div class="card"><h1>Nasıl yardımcı olabilirim?</h1>
-{% if error %}<div class="error">{{error}}</div>{% endif %}
-<form method="post" action="/ask"><label>Araç</label><select name="vehicle_id">{% for v in vehicles %}<option value="{{v['id']}}">{{v['name']}}</option>{% endfor %}</select>
-<label>Sorunuz</label><textarea name="question" placeholder="Örn: Kırmızı DURDURMA uyarısı ne anlama geliyor?" required>{{question or ''}}</textarea>
-<p class="muted">Bugün kalan soru hakkınız: {{remaining}}</p><button>🔎 Kılavuzlarda Ara ve Cevapla</button></form></div>
-{% if answer %}<div class="card"><h2>Yanıt</h2><div class="answer">{{answer}}</div>{% if sources %}<hr><b>Kaynak</b><ul>{% for s in sources %}<li>{{s}}</li>{% endfor %}</ul>{% endif %}</div>{% endif %}{% endif %}{% endblock %}
