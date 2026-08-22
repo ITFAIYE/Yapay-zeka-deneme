@@ -1,8 +1,0 @@
-<!doctype html><html lang="tr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>İtfaiye Yapay Zekâ Kılavuzu</title>
-<link rel="stylesheet" href="/static/style.css"></head><body>
-<header><div class="wrap"><b>🚒 İtfaiye Yapay Zekâ Kılavuzu</b><nav>
-{% if user %}<span>{{user['username']}}</span>{% if user['role']=='admin'%}<a href="/admin">Yönetim</a>{% endif %}<a href="/logout">Çıkış</a>
-{% else %}<a href="/login">Giriş</a><a href="/register">Kayıt</a>{% endif %}
-</nav></div></header><main class="wrap">{% block content %}{% endblock %}</main></body></html>
