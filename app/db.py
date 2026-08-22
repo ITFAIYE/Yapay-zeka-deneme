@@ -3,7 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-DB = Path(os.getenv("DATABASE_PATH","data/itfaiye.db"))
+DB = Path(os.getenv("DATABASE_PATH", "/tmp/itfaiye.db"))
 DB.parent.mkdir(parents=True, exist_ok=True)
 
 def conn():
