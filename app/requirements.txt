@@ -1,7 +1,0 @@
-fastapi
-uvicorn[standard]
-python-multipart
-python-dotenv
-requests
-jinja2
-itsdangerous
