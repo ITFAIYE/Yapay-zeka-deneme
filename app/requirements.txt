@@ -1,7 +1,0 @@
-fastapi
-starlette
-jinja2
-python-multipart
-python-dotenv
-requests
-psycopg[binary]
