@@ -1,4 +1,0 @@
-{% extends "base.html" %}{% block content %}<div class="card narrow"><h1>Giriş Yap</h1>
-{% if registered %}<div class="ok">Kayıt başarılı. Giriş yapabilirsiniz.</div>{% endif %}{% if error %}<div class="error">{{error}}</div>{% endif %}
-<form method="post"><label>Kullanıcı adı</label><input name="username" required>
-<label>Şifre</label><input type="password" name="password" required><button>Giriş Yap</button></form></div>{% endblock %}
