@@ -1,0 +1,15 @@
+{
+  "name": "İtfaiye Yapay Zekâ Kılavuzu",
+  "short_name": "İtfaiye AI",
+  "description": "İtfaiye araçları için yapay zekâ destekli kılavuz asistanı",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#14171a",
+  "theme_color": "#14171a",
+  "lang": "tr",
+  "icons": [
+    { "src": "/static/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/static/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
