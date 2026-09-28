@@ -7,6 +7,6 @@
 <label>Soyad</label><input name="last_name" value="{{f.last_name or ''}}" minlength="2" maxlength="60" required autocomplete="family-name">
 <label>Telefon</label><input type="tel" name="phone" value="{{f.phone or ''}}" placeholder="05XX XXX XX XX" inputmode="tel" pattern="[0-9+\s()\-]{10,20}" maxlength="20" required autocomplete="tel">
 <label>E-posta</label><input type="email" name="email" value="{{f.email or ''}}" required autocomplete="email">
-<label>İstasyon</label><input name="station" value="{{f.station or ''}}" placeholder="Örn. Çankaya İtfaiye Grup Amirliği" maxlength="120" required>
+<label>İstasyon</label><input name="station" value="{{f.station or ''}}" placeholder="ANKARA DIŞI İL İSMİ YAZINIZ" maxlength="120" required>
 <label>Kullanıcı adı</label><input name="username" value="{{f.username or ''}}" minlength="3" required autocomplete="username">
 <label>Şifre</label><input type="password" name="password" minlength="8" required autocomplete="new-password"><button>Kayıt Ol</button></form></div>{% endblock %}
